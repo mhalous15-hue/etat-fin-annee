@@ -61,7 +61,6 @@ async function writeManifest(manifest: Manifest): Promise<void> {
   await put(MANIFEST_PATH, JSON.stringify(manifest), {
     access: "public",
     addRandomSuffix: false,
-    allowOverwrite: true,
     contentType: "application/json",
   });
 }
