@@ -3,10 +3,10 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { Palette, Camera, Aperture, ArrowDown } from "lucide-react";
+import { Palette, Camera, Aperture, ArrowDown, type LucideIcon } from "lucide-react";
 import { profile, services, stats, type ServiceIcon, type Service } from "@/lib/data";
 
-const ICONS: Record<ServiceIcon, React.ComponentType<{ size?: number }>> = {
+const ICONS: Record<ServiceIcon, LucideIcon> = {
   design: Palette,
   progress: Camera,
   event: Aperture,
